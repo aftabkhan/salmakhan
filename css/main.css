@@ -81,8 +81,8 @@ body {
 }
 .left-col,
 .right-col {
-    /*! -moz-box-flex: 1; */
-    /*! flex: 1 1 0%; */
+    -moz-box-flex: 1;
+    flex: 1 1 0%;
 }
 .right-col {
     background: #f7ced9 !important;
@@ -127,8 +127,13 @@ h4 {
     color: #f40068;
 }
 
+.comingsoon-content {
+    position: absolute;
+    bottom: 80px;
+}
 
-@media (min-width: 992px) {
+
+@media (min-width: 991px) {
     .social-icons li a,
     .mail-icon  {
         font-size: 1.6rem !important;
@@ -137,4 +142,12 @@ h4 {
         font-size: 2.4rem;
         line-height: 2.4rem;
         }
+}
+
+@media (max-width: 992px) {
+    .right-col {
+        background:#f7ced9 url(../images/brushes.png) right center no-repeat !important; 
+        background-attachment: fixed !important;
+        width: 138px;
+    }
 }
